@@ -11,6 +11,7 @@
     </div>
     <h2><a class="article-title" href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
     <p class="article-content">{{ post.content }}</p>
+    <img src="{{ post.photo.url }}" class="img-responsive" style="width: 100%; float: left; margin-right: 10px;" />
   </div>
 </article>
 {% endfor %}
